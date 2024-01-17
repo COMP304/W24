@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Week2</string>
+    <string name="title">Week 2 Project</string>
+    <string name="button1">Function In Kotlin</string>
+    <string name="button2">Lamda In Kotlin</string>
+    <string name="meg">Function Button Clicked</string>
+</resources>
