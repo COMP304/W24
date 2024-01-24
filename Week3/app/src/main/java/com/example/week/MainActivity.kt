@@ -17,6 +17,33 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("week3","in onCreate function A1")
 
+        var addFragment = findViewById<Button>(R.id.add_fragment)
+        addFragment.setOnClickListener(View.OnClickListener {
+            var fragment1 = Fragment1()
+            supportFragmentManager.beginTransaction().add(R.id.framelayout,fragment1).commit()
+           // supportFragmentManager.beginTransaction().add(fragment1,"1").commit()
+        })
+
+        var replaceFragment = findViewById<Button>(R.id.replace_fragment)
+        replaceFragment.setOnClickListener(View.OnClickListener {
+            var fragment2 = Fragment2()
+           supportFragmentManager.beginTransaction().replace(R.id.framelayout,fragment2).commit()
+//
+        })
+
+        var removeFragment = findViewById<Button>(R.id.remove_fragment)
+        removeFragment.setOnClickListener(View.OnClickListener {
+//            var fragment2 = Fragment2()
+//            supportFragmentManager.beginTransaction().replace(R.id.framelayout,fragment2).commit()
+//
+
+           var fragment =  supportFragmentManager.findFragmentById(R.id.framelayout)
+            if (fragment != null) {
+                supportFragmentManager.beginTransaction().remove(fragment).commit()
+            }
+        })
+
+
 
         var tosecondButton = findViewById<Button>(R.id.tosecond)
 

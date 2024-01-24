@@ -4,4 +4,6 @@
     <string name="hello_world_2">Hello World 2!</string>
     <string name="hello_world_3">Hello World 3!</string>
     <string name="hello_world_4">Hello World 4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
