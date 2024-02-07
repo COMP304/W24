@@ -20,7 +20,7 @@
 
   <EditText
       android:id="@+id/num1"
-      android:layout_width="wrap_content"
+      android:layout_width="0dp"
       android:layout_height="@dimen/edittext_height"
       app:layout_constraintBottom_toTopOf="@id/list"
       app:layout_constraintStart_toStartOf="parent"
@@ -29,19 +29,23 @@
       app:layout_constraintTop_toBottomOf="@id/image"
       android:autofillHints="Num1"
       android:inputType="number"
+      style="@style/alltextinMyApp"
       />
 
   <EditText
       android:id="@+id/num2"
-      android:layout_width="wrap_content"
+      android:layout_width="0dp"
       android:layout_height="@dimen/edittext_height"
       app:layout_constraintBottom_toTopOf="@id/list"
       app:layout_constraintStart_toEndOf="@id/num1"
       android:hint="@string/enter_second_number"
+
       app:layout_constraintEnd_toStartOf="@id/add"
       app:layout_constraintTop_toBottomOf="@id/image"
       android:autofillHints="Num2"
-      android:inputType="number" />
+      android:inputType="number"
+      style="@style/alltextinMyApp"
+      />
 
   <Button
       android:id="@+id/add"
@@ -52,7 +56,7 @@
       app:layout_constraintStart_toEndOf="@id/num2"
       android:text="@string/add"
       app:layout_constraintTop_toBottomOf="@id/image"
-
+      style="@style/alltextinMyApp"
 
       />
 
