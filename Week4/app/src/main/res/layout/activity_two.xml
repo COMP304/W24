@@ -15,4 +15,61 @@
         style="@style/alltextinMyApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <CheckBox
+
+        android:id="@+id/quick_checkbox"
+        android:layout_width="@dimen/checkbox_width"
+        android:layout_height="wrap_content"
+        android:text="Quick?"
+        app:layout_constraintBottom_toTopOf="@id/vege_checkbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <CheckBox
+        android:id="@+id/vege_checkbox"
+        android:layout_width="@dimen/checkbox_width"
+        android:layout_height="wrap_content"
+        android:text="Vegeterian?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quick_checkbox"
+        />
+
+<ToggleButton
+    android:id="@+id/lightbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/vege_checkbox"
+    android:textOn="Light"
+    android:textOff="Dark"
+    android:text="App Lights"
+    />
+
+    <Spinner
+        android:id="@+id/colleges_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lightbutton"
+        android:entries="@array/colleges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+   <AutoCompleteTextView
+       android:id="@+id/citytext"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/colleges_spinner"
+       />
+    <Button
+        android:id="@+id/getresult_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
