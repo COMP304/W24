@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "246191750840",
+    "project_id": "androidw24project",
+    "storage_bucket": "androidw24project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246191750840:android:907589e66194b07e913e4d",
+        "android_client_info": {
+          "package_name": "com.example.week8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_LB19C3IEnfJ-ApobfPFDP84e5rk99ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
